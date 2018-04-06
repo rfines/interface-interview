@@ -9,9 +9,6 @@ class App extends Component {
     super(props);
     this.renderIcon = this.renderIcon.bind(this);
   }
-  componentWillMount() {
-
-  }
   getTime = (time) => {
     const minutes = Math.floor(time/60);
     const seconds = (time - (minutes*60));
@@ -27,7 +24,6 @@ class App extends Component {
     return (<Comp className={className} width={size ? size: undefined } height={size ? size: undefined } />);
   }
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <div className="container">
